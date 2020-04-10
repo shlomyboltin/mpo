@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/getqrtzview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/trans">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/hebrow_alfa"
+            android:text="@string/enter_tz"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="32dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/misparzehutinput"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_shapee"
+                android:ems="10"
+                android:fontFamily="@font/hebrow_alfa"
+                android:hint="@string/qr_bytz_hint"
+                android:inputType="number|textPersonName"
+                android:textAlignment="center" />
+
+            <ImageButton
+                android:id="@+id/printqr"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edit_text_shapee"
+                android:fontFamily="@font/hebrow_alfa"
+                android:src="@drawable/printer_b" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/searchresulthedertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="worker profile"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nametext" />
+
+            <TextView
+                android:id="@+id/workername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="noname"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/passwordtext" />
+
+            <EditText
+                android:id="@+id/passwordt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="12345678"
+                android:textAlignment="center"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="permitions" />
+
+            <Switch
+                android:id="@+id/stamppermition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="stamp" />
+
+            <Switch
+                android:id="@+id/addbuspermition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="addbus" />
+
+            <Switch
+                android:id="@+id/openbuspermition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="openbus" />
+
+            <Switch
+                android:id="@+id/closebuspermition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="closebus" />
+
+            <Switch
+                android:id="@+id/manegerpermition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="maneger" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/savewprpfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/savetext" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
